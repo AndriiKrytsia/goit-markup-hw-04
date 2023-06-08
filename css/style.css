@@ -29,7 +29,7 @@ ul {
   font-family: 'Roboto', sans-serif;
   color: var(--slate-color);
   background-color: var(--white-color);
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -523,10 +523,7 @@ ul {
 
 .list-footer {
   display: flex;
-}
-
-.item-footer:not(:last-child) {
-  margin-right: 16px;
+  gap: 16px;
 }
 
 .link-footer {
