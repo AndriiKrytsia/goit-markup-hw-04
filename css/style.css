@@ -542,7 +542,5 @@ ul {
 }
 
 .svg-footer {
-  height: 24px;
-  width: 24px;
   fill: var(--graywhite-color);
 }
