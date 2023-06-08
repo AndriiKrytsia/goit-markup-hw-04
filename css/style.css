@@ -486,7 +486,7 @@ ul {
   text-transform: uppercase;
   color: var(--iris-color);
   margin-bottom: 16px;
-  display: inline-block;
+  display: block;
 }
 
 .foter-first {
