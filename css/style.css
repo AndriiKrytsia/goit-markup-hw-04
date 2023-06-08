@@ -484,6 +484,21 @@ ul {
   max-width: 264px;
 }
 
+.content-footer {
+  display: flex;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .title-footer {
   font-weight: 500;
   font-size: 16px;
@@ -518,7 +533,7 @@ ul {
 }
 
 .svg-footer {
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
   fill: var(--graywhite-color);
 }
