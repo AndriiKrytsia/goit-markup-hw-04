@@ -388,9 +388,6 @@ ul {
 }
 
 .svg-section-five {
-  /* width: 104px;
-  height: 56px; */
-  /* margin: 16px 32px; */
 }
 
 /* MAIN */
@@ -452,6 +449,16 @@ ul {
 }
 
 .list-works:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.link-works {
+  display: block;
+}
+
+.link-works,
+.link-works {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
