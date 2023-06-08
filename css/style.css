@@ -6,6 +6,7 @@
   --slate-color: #434455;
   --white-color: #fff;
   --graywhite-color: #f4f4fd;
+  --border-for-icons: #8e8f99;
 }
 
 img {
@@ -28,6 +29,9 @@ ul {
   font-family: 'Roboto', sans-serif;
   color: var(--slate-color);
   background-color: var(--white-color);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link {
@@ -43,6 +47,7 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 /* HEADER */
 .main-header {
   border-bottom: 1px solid #e7e9fc;
@@ -131,9 +136,14 @@ ul {
 /* SECTION-1 */
 .section-one {
   background-color: var(--navyblue-color);
-  max-width: 1440px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/background/people-office.jpg);
+  /* max-width: 1440px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -179,6 +189,14 @@ ul {
 /* SECTION-2 */
 .section-two {
   padding: 120px 0;
+}
+
+.svg-section-two {
+  width: 264px;
+  height: 112px;
+  background-color: var(--graywhite-color);
+  border-radius: 4px;
+  padding: 24px 100px;
 }
 
 .list-advantages {
@@ -260,6 +278,30 @@ ul {
 .team-skill {
   text-align: center;
 }
+
+.list-social-group {
+  display: flex;
+}
+
+.item-social-group:not(:last-child) {
+  margin-right: 24px;
+}
+
+.link-social-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris-color);
+}
+
+.svg-social-group {
+  height: 16px;
+  width: 16px;
+  fill: var(--graywhite-color);
+}
 /* SECTION-4 */
 
 .title-two {
@@ -288,6 +330,49 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  margin-bottom: 8px;
+}
+
+/* Section-5 */
+.section-five {
+  background-color: var(--white-color);
+  padding: 120px 0;
+}
+
+.title-section-five {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.list-section-five {
+  display: flex;
+  gap: 24px;
+}
+
+.link-section-five {
+  fill: var(--border-for-icons);
+  border: 1px solid var(--border-for-icons);
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: inline-block;
+}
+
+.link-section-five:hover,
+.link-section-five:focus {
+  fill: var(--ocean-color);
+  border: 1px solid var(--ocean-color);
+}
+
+.svg-section-five {
+  width: 104px;
+  height: 56px;
+  /* margin: 16px 32px; */
 }
 
 /* MAIN */
@@ -325,24 +410,20 @@ ul {
   padding: 12px 24px;
 }
 
-.list-buttons {
-  display: flex;
-  justify-content: center;
-  /* margin-top: 96px; */
-  gap: 24px;
-  margin-bottom: 72px;
-}
-
-.buttons:hover {
-  color: var(--white-color);
-  background-color: var(--ocean-color);
-  border: 1px solid transparent;
-}
-
+.buttons:hover,
 .buttons:focus {
   color: var(--white-color);
   background-color: var(--ocean-color);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.list-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 
 .list-portfolio {
@@ -350,6 +431,11 @@ ul {
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 48px;
+}
+
+.list-works:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .title-twoportfolio {
@@ -396,4 +482,43 @@ ul {
 .guide {
   color: var(--graywhite-color);
   max-width: 264px;
+}
+
+.title-footer {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+
+  color: var(--white-color);
+}
+
+.list-footer {
+  display: flex;
+}
+
+.item-footer:not(:last-child) {
+  margin-right: 16px;
+}
+
+.link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris-color);
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  background-color: var(--meantgreen-color);
+}
+
+.svg-footer {
+  height: 16px;
+  width: 16px;
+  fill: var(--graywhite-color);
 }
