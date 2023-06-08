@@ -231,7 +231,6 @@ ul {
 .text-sectiontwo {
   width: 264px;
 }
-/* SECTION-2 */
 
 /* SECTION-3 */
 .section-three {
@@ -247,8 +246,6 @@ ul {
 .image-gad:first-child {
   width: calc((100% - 48px) / 3);
 }
-
-/* SECTION-3 */
 
 /* SECTION-4 */
 .section-four {
@@ -309,8 +306,6 @@ ul {
 }
 
 .svg-social-group {
-  /* height: 16px;
-  width: 16px; */
   fill: var(--graywhite-color);
 }
 /* SECTION-4 */
